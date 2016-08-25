@@ -1,3 +1,2 @@
-Notebooks for Assignment 2: Elementary Propagation
-
-Exercises in using the general formula for propagation of error to derive expressions for several physical chemistry relationships.
+Notebooks for chapter Data Analysis of the physical chemistry laboratory
+manual R. Esler and J. Mills, FLC, 1990.
