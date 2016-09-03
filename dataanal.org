@@ -1,0 +1,76 @@
+* Options :noexport:
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:nil c:nil
+##+OPTIONS: ^:{} _:{}
+#+OPTIONS: creator:nil d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t
+#+OPTIONS: num:nil p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:t
+#+OPTIONS: title:nil toc:nil todo:t |:t
+#+OPTIONS: html-postamble:nil
+
+# Recording change of state for TODOs: (setq org-log-done 'time)
+# In-buffer setting can be 'logdone or 'nil for time or nothing
+#+STARTUP: lognotedone
+
+#+TITLE: Intro to Error Analysis
+#+DATE:
+#+AUTHOR: ssinglet
+#+EMAIL:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs (Org mode 8)
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{mathpazo}
+#+LATEX_HEADER: \usepackage{mhchem}
+#+LATEX_HEADER_EXTRA:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+SUBTITLE:
+#+DATE: \today
+#+LaTeX: \setcounter{secnumdepth}{0} % turns off section numbering
+
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/notebook.css" />
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://chemistry.coe.edu/tufte-css/tufte.css/notebook.css" />
+#+HTML_MATHJAX: path:/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_HTML-full
+
+
+#+REVEAL_ROOT: /home/ssinglet/local/share/reveal.js
+# #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_MATHJAX_URL: /usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_HTML-full
+# #+REVEAL_THEME: simple
+
+# #+PANDOC_OPTIONS: toc-depth:2
+
+# (setq org-export-babel-evaluate 'nil) ; speed up export
+
+#+PROPERTY: header-args:ipython  :session
+#+PROPERTY: header-args    :exports both
+
+* Elementary Propagation :noexport:
+* An example: The molecular mass of a volatile liquid
+:PROPERTIES:
+:EXPORT_FILE_NAME: /tmp/mw_of_liquid
+:END:
+
+Estimate the propagated uncertainty for an experiment from an old lab
+experiment (Determination of the Molecular Weight of a Volatile
+Liquid) by reconstructing on paper a plausible experiment.  Assume
+that you use an analytical balance, graduated cylinder, barometer, and
+ordinary thermometer.  Report the uncertainty and comment on the
+largest source of error, any discrepancies, etc.
+
+Follow best practices for reproducible work. For example, if using a
+spreadsheet, use informative labels, arrange columns to indicate the flow of the
+calculation, use absolute referencing for constants, and the like. If using
+python, choose informative variable names, use explanatory text, think about the
+flow of the calculation.
+
+With either computational tool, imagine an outsider trying to understand the
+work...s/he is your audience. If you're not sure about these practices, contact
+me so we can go over them together.
+
+The student data is available in the file mw_of_liquid_student_data.pdf
