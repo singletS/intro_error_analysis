@@ -1,2 +1,2 @@
 Notebooks for chapter Data Analysis of the physical chemistry laboratory
-manual R. Esler and J. Mills, FLC, 1990.
+manual R. Esler and J. Mills, FLC.

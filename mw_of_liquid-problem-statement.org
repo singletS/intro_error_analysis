@@ -34,9 +34,9 @@
 #+LaTeX: \setcounter{secnumdepth}{0} % turns off section numbering
 
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/notebook.css" />
+
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://chemistry.coe.edu/tufte-css/tufte.css/notebook.css" />
 #+HTML_MATHJAX: path:/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_HTML-full
-
 
 #+REVEAL_ROOT: /home/ssinglet/local/share/reveal.js
 # #+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
@@ -50,11 +50,41 @@
 #+PROPERTY: header-args:ipython  :session
 #+PROPERTY: header-args    :exports both
 
-* Elementary Propagation :noexport:
+##+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
+
+* Elementary Propagation
+
+\begin{align}
+  \delta A &= \sqrt{\left( \frac{\partial A}{\partial a}\right) ^2
+    _{bM} \delta a^2 + \left(\frac{\partial A}{\partial b}
+    \right)^2_{aM} \delta b^2 + \left(\frac{\partial A}{\partial
+        M}\right)^2_{ab} \delta
+    M^2 } \notag \\
+
+ &= \sqrt{(b^2 M^2 \delta a^2 + a^2 M^2 \delta b^2 + a^2 b^2 \delta
+  M^2)} \notag
+%
+
+\end{align}
+Derive uncertainty relationships for the following.
+
+1. Root-mean-square speed of a molecule; $R$ constant.
+   \[  v_{\text{rms}} = \sqrt{\frac{3 RT}{M}} \]
+
+2. An equation of state for gases; $R$ constant
+   \[  P = \frac{RT}{V-b} - \frac{a}{V^2} \]
+
+3. Compressibility of a gas; $R$ constant
+   \[ Z = \frac{PV}{RT} \]
+
+4. Rotational partition function; $k, h, \sigma$ constant
+
+   \[ q_r  = \frac{2IkT}{\sigma h^2}  \]
+5. Translational partition function; $k, h$ constant
+   \[  q_{tr} = \left( \frac{2 \pi mkT}{h^2}\right) ^{3/2}\]
+
+
 * An example: The molecular mass of a volatile liquid
-:PROPERTIES:
-:EXPORT_FILE_NAME: /tmp/mw_of_liquid
-:END:
 
 Estimate the propagated uncertainty for an experiment from an old lab
 experiment (Determination of the Molecular Weight of a Volatile
@@ -73,4 +103,4 @@ With either computational tool, imagine an outsider trying to understand the
 work...s/he is your audience. If you're not sure about these practices, contact
 me so we can go over them together.
 
-The student data is available in the file mw_of_liquid_student_data.pdf
+The student data is available in the file =mw_of_liquid_student_data.pdf=.
